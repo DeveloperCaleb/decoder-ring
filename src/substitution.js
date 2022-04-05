@@ -23,7 +23,6 @@ const substitutionModule = (function () {
       }
     }
 
-    //put the below logic into its own function and the pass in different arguements based on encode or decode
     //loop through the array
     if (encode) {
       for (let i = 0; i < input.length; i++) {
