@@ -56,7 +56,7 @@ const polybiusModule = (function () {
     //if encode is false use this code
     if (!encode) {
       //if the length of the string excluding spaces is odd return false
-      if (input.replaceAll(" ", "").length % 2 !== 0) return false;
+      if (input.replace(/ /g, "").length % 2 !== 0) return false;
       //incremented by 2 since each coordinate is two numbers
       for (let i = 0; i < input.length; i += 2) {
         //push spaces to the return string, increment i by 1 since there is no yVar for a space
